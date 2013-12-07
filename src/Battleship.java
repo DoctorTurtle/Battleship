@@ -29,6 +29,7 @@ import javax.swing.UIManager;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+//obligatory comment to show that I can commits before I sits
 
 public class Battleship extends JFrame {
 	protected Config config;
