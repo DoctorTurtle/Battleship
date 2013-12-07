@@ -29,7 +29,6 @@ import javax.swing.UIManager;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-//obligatory comment to show that I can commits before I sits
 
 public class Battleship extends JFrame {
 	protected Config config;
@@ -88,7 +87,7 @@ public class Battleship extends JFrame {
 						JOptionPane.showMessageDialog(
 							null,
 							new JLabel("<html>Version 0.2<br><br>Created by:<br><br>Trevor Powless<br>Kurtis Reed</html>"),
-							"Battleship",
+							"Connect Four",
 							JOptionPane.INFORMATION_MESSAGE
 						);
 						break;
