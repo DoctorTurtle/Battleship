@@ -1,7 +1,7 @@
 package battleship;
 
 import battleship.Grid;
-import connectfour.Token;
+import battleship.Token;
 
 public class Player {
 	protected Grid grid;
