@@ -48,17 +48,17 @@ public class Battleship extends JFrame {
 		// Center on screen
 		setLocationRelativeTo(null);
 
-//		config = getConfig();
+		config = getConfig();
 	}
 
-//	public Config getConfig() {
-//		File directory = new File(System.getProperty("user.home"), ".battleship");
-//		if (!directory.exists()) {
-//			directory.mkdir();
-//		}
-//		File f = new File(directory, "config.dat");
-//		return new Config(f);
-//	}
+	public Config getConfig() {
+		File directory = new File(System.getProperty("user.home"), ".battleship");
+		if (!directory.exists()) {
+			directory.mkdir();
+		}
+		File f = new File(directory, "config.dat");
+		return new Config(f);
+	}
 
 	/**
 	 * @return the JMenuBar
