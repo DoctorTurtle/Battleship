@@ -1,12 +1,12 @@
 package battleship;
 
 import battleship.Grid;
-import battleship.Token;
+//import battleship.Token;
 
 public class Player {
 	protected Grid grid;
 	protected int color;
-	protected Token current;
+//	protected Token current;
 
 	Player(int c) {
 		color = c;
@@ -32,7 +32,7 @@ public class Player {
 		
 	}
 
-	public void setToken(Token c) {
-		current = c;
-	}
+//	public void setToken(Token c) {
+//		current = c;
+//	}
 }
