@@ -1,54 +1,57 @@
 package battleship;
 
-public class HumanPlayer 
-{
-	public class HumanPlayer extends Player {
-		protected String name;
-		protected ArrayList<Integer> scores;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
 
-		HumanPlayer(String n, int c) {
-			super(c);
-			name = n;
-			color = c;
-			scores = new ArrayList<Integer>();
-		}
+import battleship.Player;
 
-		// Initialize from stream
-		HumanPlayer(DataInputStream in) throws IOException {
-			this(in.readUTF(), in.readInt());
-			int numScores = in.readInt();
-			scores = new ArrayList<Integer>(numScores);
-			for (int i = 0; i < numScores; i++) {
-				scores.add(i);
-			}
-		}
+public class HumanPlayer extends Player {
+	protected String name;
+	protected ArrayList<Integer> scores;
 
-		public void write(DataOutputStream out) throws IOException {
-			out.writeUTF(name);
-			out.writeInt(color);
-			out.writeInt(scores.size());
-			for (Integer score : scores) {
-				out.writeInt(score);
-			}
-		}
-		
-		public String getName() {
-			return name;
-		}
-		
-		public void makeMove() {
+	HumanPlayer(String n, int c) {
+		super(c);
+		name = n;
+		color = c;
+		scores = new ArrayList<Integer>();
+	}
 
-		}
-
-		public void mouseMoved(int x) {
-			current.setX(x);
-		}
-
-		public void mouseClicked() {
-			if (!grid.getFullColumns().contains(current.getX())) {
-				current.drop();
-			}
+	// Initialize from stream
+	HumanPlayer(DataInputStream in) throws IOException {
+		this(in.readUTF(), in.readInt());
+		int numScores = in.readInt();
+		scores = new ArrayList<Integer>(numScores);
+		for (int i = 0; i < numScores; i++) {
+			scores.add(i);
 		}
 	}
 
+	public void write(DataOutputStream out) throws IOException {
+		out.writeUTF(name);
+		out.writeInt(color);
+		out.writeInt(scores.size());
+		for (Integer score : scores) {
+			out.writeInt(score);
+		}
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void makeMove() {
+
+	}
+
+//	public void mouseMoved(int x) {
+//		current.setX(x);
+//	}
+//
+//	public void mouseClicked() {
+//		if (!grid.getFullColumns().contains(current.getX())) {
+//			current.drop();
+//		}
+//	}
 }

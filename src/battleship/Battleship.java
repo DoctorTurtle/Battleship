@@ -71,7 +71,7 @@ public class Battleship extends JFrame {
 						// The JOptionPane is a temporary means by which to display the about info
 						JOptionPane.showMessageDialog(
 							null,
-							new JLabel("<html>Version 0.2<br><br>Created by:<br><br>Trevor Powless<br>Kurtis Reed</html>"),
+							new JLabel("<html>Version 0.3<br><br>Created by:<br><br>Trevor Powless<br>Kurtis Reed<br>Guillermo Jara</html>"),
 							"Connect Four",
 							JOptionPane.INFORMATION_MESSAGE
 						);
@@ -79,19 +79,19 @@ public class Battleship extends JFrame {
 					case "showHighScores":
 						JOptionPane.showMessageDialog(null, "");
 						break;
-					case "quit":
-						if (getContentPane() instanceof Grid) {
-							int initializeGame = JOptionPane.NO_OPTION;
-							initializeGame = JOptionPane.showConfirmDialog(
-								null,
-								"You have a game running. Are you sure you want to quit?\nQuitting a game is scored as loss.",
-								"New Game",
-								JOptionPane.YES_NO_OPTION
-							);
-							if (initializeGame == JOptionPane.NO_OPTION || initializeGame == JOptionPane.DEFAULT_OPTION) return;
-						}
-						quit();
-						break;
+//					case "quit":
+//						if (getContentPane() instanceof Grid) {
+//							int initializeGame = JOptionPane.NO_OPTION;
+//							initializeGame = JOptionPane.showConfirmDialog(
+//								null,
+//								"You have a game running. Are you sure you want to quit?\nQuitting a game is scored as loss.",
+//								"New Game",
+//								JOptionPane.YES_NO_OPTION
+//							);
+//							if (initializeGame == JOptionPane.NO_OPTION || initializeGame == JOptionPane.DEFAULT_OPTION) return;
+//						}
+//						quit();
+//						break;
 					}
 				}
 			};
@@ -291,7 +291,7 @@ public class Battleship extends JFrame {
 //					} else if (selected.equals("ivi")) {
 //						players = new Player[]{new AIPlayer(0xFF0000, false), new AIPlayer(0x000000, false)};
 //					}
-					setContentPane(new Grid(players));
+//					setContentPane(new Grid(players));
 					pack();
 					dialog.dispose();
 				}
@@ -337,20 +337,20 @@ public class Battleship extends JFrame {
 	 * Method to create a new game
 	 */
 	public void newGrid() {
-		if (getContentPane() instanceof Grid) {
-			int initializeGame = JOptionPane.NO_OPTION;
-			initializeGame = JOptionPane.showConfirmDialog(
-				null,
-				"You have a game running. Do you want to abort and start a new game?\nAborting a game is scored as loss.",
-				"New Game",
-				JOptionPane.YES_NO_OPTION
-			);
-			if (initializeGame == JOptionPane.NO_OPTION || initializeGame == JOptionPane.DEFAULT_OPTION) return;
-		}
+//		if (getContentPane() instanceof Grid) {
+//			int initializeGame = JOptionPane.NO_OPTION;
+//			initializeGame = JOptionPane.showConfirmDialog(
+//				null,
+//				"You have a game running. Do you want to abort and start a new game?\nAborting a game is scored as loss.",
+//				"New Game",
+//				JOptionPane.YES_NO_OPTION
+//			);
+//			if (initializeGame == JOptionPane.NO_OPTION || initializeGame == JOptionPane.DEFAULT_OPTION) return;
+//		}
 		infoPanel().setVisible(true);
-		setContentPane();
-		pack();
-		setLocationRelativeTo(null);
+//		setContentPane();
+//		pack();
+//		setLocationRelativeTo(null);
 	}
 	
 	/**
