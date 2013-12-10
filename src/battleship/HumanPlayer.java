@@ -38,6 +38,9 @@ public class HumanPlayer extends Player {
 	}
 	
 	public String getName() {
+		Scanner nameInput = new Scanner(System.in);
+		System.out.println("Please enter a player name.");
+		String name = nameInput.nextLine();
 		return name;
 	}
 	
