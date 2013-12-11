@@ -6,3 +6,4 @@ VERSION 0.2 - Added Human.java, AIPlayer.java, Grid.java, Player.java, fixed Hum
 
 VERSION 0.3 - Created template for Grid.java, expanded Player.java, made Battleship UI more useable.
     0.3.1 - Battleship.java UI is functional, added Guillermo to the About section, cleaned HumanPlayer.java
+	0.3.2 - Added method body to getName, system asks for player name, returns name.
