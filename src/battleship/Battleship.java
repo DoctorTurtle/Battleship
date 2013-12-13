@@ -72,7 +72,7 @@ public class Battleship extends JFrame {
 						JOptionPane.showMessageDialog(
 							null,
 							new JLabel("<html>Version 0.3<br><br>Created by:<br><br>Trevor Powless<br>Kurtis Reed<br>Guillermo Jara</html>"),
-							"Connect Four",
+							"Battleship",
 							JOptionPane.INFORMATION_MESSAGE
 						);
 						break;

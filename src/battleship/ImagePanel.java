@@ -1,4 +1,4 @@
-package battleship;
+package Battleship;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
