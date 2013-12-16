@@ -751,7 +751,7 @@ public class Battleship extends JFrame
 				}
 				else if (gametype==cvc)//Computer vs Computer
 				{										
-					mbar.setText("Battleship Demo");					
+					mbar.setText("Battleship");					
 					mbar.setEditable(false);					
 					d.add(mbar,BorderLayout.NORTH);
 					players[you]=new Player ("CPU1");
